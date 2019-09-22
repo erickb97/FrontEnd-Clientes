@@ -15,6 +15,7 @@ const ingresaRegistro = () =>{
                 <label>Primer Nombre</label>
                 <input type="text" class="form-control"></input>
             </div>
+            
             <div class="input-group mb-3">
                 <label>Primer Apellido</label>
                 <input type="text" class="form-control"></input>
@@ -24,7 +25,8 @@ const ingresaRegistro = () =>{
                 <label>No. DPI</label>
                 <input type="text" class="form-control"></input>
             </div> <br/>
-                        
+                <button>buscar cliente</button>
+
             </form>
 
             <div class="jumbotron text-center">

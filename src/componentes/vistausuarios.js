@@ -4,10 +4,17 @@ import Nav from './navigation';
 
 class Users extends React.Component{
   state = {
-    datos: datos
+    datos: []
   }
   
-
+  componentDidMount() {
+    fetch('http://localhost:8080/proyectopw/webresources/user/all')
+        .then(res => res.json())
+        .then((data) => {
+            this.setState({ datos: data })
+        })
+        .catch(console.log)
+}
   render(){
     return(
       
@@ -21,21 +28,30 @@ class Users extends React.Component{
               <tr>
                 <th>No. </th>
                 <th>Primer Nombre</th>
-                <th>Apellido</th>
+                <th>Segundo Nombre</th>
+                <th>Primer Apellido</th>
+                <th>Segundo Apellido</th>
                 <th>DPI</th>
+                <th>Direccion</th>
                 <th>Telefono</th>
+                <th>Correo</th>
+
               </tr>
             </thead>
             <tbody>
               
               {this.state.datos.map(e => <tr >
-                <td>{e.No}</td>
-                <td>{e.nombre}</td>
-                <td>{e.Apellido}</td>
-                <td>{e.DPI}</td>
-                <td>{e.Celular}</td>
-                </tr>)}
-              
+                <td>{e.Id_Clientes}</td>
+                <td>{e.nombre1}</td>
+                <td>{e.nombre2}</td>
+                <td>{e.apellido1}</td>
+                <td>{e.apellido2}</td>
+                <td>{e.dpi}</td>
+                <td>{e.direccion}</td>
+                <td>{e.telefono}</td>
+                <td>{e.correo}</td>
+
+                </tr>)}              
             </tbody>
           </table>
         </div>
