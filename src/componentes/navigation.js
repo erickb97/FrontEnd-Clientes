@@ -11,7 +11,8 @@ const Nav = () =>{
         <ul class="nav navbar-nav">
           <li class="active"><Link to="/dashboard">Dashboard</Link></li>
           <li><Link to="/visitausuarios">Clientes con Deuda</Link></li>
-          <li><Link to="/ingresarregistro">Ingresar Pago</Link></li>
+          <li><Link to="/ingresarregistro">Nuevo Cliente</Link></li>
+          <li><Link to="/registrapago">Ingresar Pago</Link></li>
         </ul>
       </div>
     </nav>

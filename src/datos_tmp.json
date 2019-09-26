@@ -1,40 +1,5 @@
 [
     {
-        "No": "1",
-        "nombre": "Juan Miguel",
-        "Apellido": "Perez",
-        "DPI": "1523056982201",
-        "Celular": "45233223"
-    },
-    
-    {
-        "No": "2",
-        "nombre": "Mario",
-        "Apellido": "Garcia",
-        "DPI": "213132131554",
-        "Celular": "22151522"
-    },
-    {
-        "No": "3",
-        "nombre": "Oscar",
-        "Apellido": "Ortiz",
-        "DPI": "8569895632215",
-        "Celular": "30685974"
-    },
-    {
-        "No": "4",
-        "nombre": "Miguel",
-        "Apellido": "Asturias",
-        "DPI": "8569895632215",
-        "Celular": "30685974"
-    },
-    {
-        "No": "5",
-        "nombre": "Mario",
-        "Apellido": "Garcia",
-        "DPI": "213132131554",
-        "Celular": "22151522"
+        
     }
-
 ]
-
